@@ -35,4 +35,5 @@ return {
   { import = "astrocommunity.git.blame-nvim" },
   { import = "astrocommunity.git.diffview-nvim" },
   { import = "astrocommunity.pack.typescript-all-in-one" },
+  { import = "astrocommunity.note-taking.obsidian-nvim" },
 }
