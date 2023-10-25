@@ -3,7 +3,21 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.colorscheme.nightfox-nvim", enabled = false },
   { import = "astrocommunity.colorscheme.kanagawa-nvim", enabled = false },
-  { import = "astrocommunity.colorscheme.everforest", enabled = true },
+  { import = "astrocommunity.colorscheme.everforest", enabled = true},
+  {
+    "everforest",
+    init = function()
+      vim.g.everforest_background = 'hard'
+      vim.g.everforest_enabled_italic = 1
+      vim.g.everforest_cursor = "auto"
+      vim.g.everforest_spell_foreground = "colored"
+      vim.g.everforest_ui_contrast = "high"
+      vim.g.everforest_float_style = "bright"
+      vim.g.everforest_diagnostic_text_highlight = 1
+      vim.g.everforest_diagnostic_line_highlight = 1
+      vim.g.everforest_diagnostic_virtual_text = 1
+    end,
+  },
   { import = "astrocommunity.colorscheme.rose-pine" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { -- further customize the options set by the community
